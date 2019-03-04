@@ -10,3 +10,5 @@ Only selenium is required for this project, found in requirements.txt, run pip i
 additionally you will also need to install chrome driver, instructions to so can be found here:
 mac: https://www.kenst.com/2015/03/installing-chromedriver-on-mac-osx/
 windows: https://www.kenst.com/2019/02/installing-chromedriver-on-windows/
+# Demo
+![](AutoFG.gif)
