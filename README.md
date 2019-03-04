@@ -11,4 +11,4 @@ additionally you will also need to install chrome driver, instructions to so can
 mac: https://www.kenst.com/2015/03/installing-chromedriver-on-mac-osx/
 windows: https://www.kenst.com/2019/02/installing-chromedriver-on-windows/
 # Demo
-![](AutoFG.gif)
+![](demo.gif)
