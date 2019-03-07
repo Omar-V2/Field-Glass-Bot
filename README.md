@@ -2,7 +2,7 @@
 A short python script that automatically fills in fieldglass timesheets
 # Usage
 After cloning the project, enter your username and password in credentials.py
-After, simply run "python AutoFieldGlass.py" and let the script do the rest.
+After, simply run "python auto_field_glass.py" and let the script do the rest.
 The Script won't actually submit the timesheet for you, this is done intentionally
 so that you can make sure everything looks good before submitting yourself.
 # Reqruirements
