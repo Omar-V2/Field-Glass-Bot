@@ -17,7 +17,7 @@ driver.find_element_by_link_text("Complete Time Sheet").click()
 
 cell_paths = []
 
-for i, j in zip(range(4, 8), [8, 11, 12, 17]):
+for i, j in zip(range(4, 8), [8, 11, 12, 17]): # these are the work intervals of the day
     cell_paths.append(["/html/body/div[3]/div[5]/div[1]/div[4]/div[2]/form/table/tbody/tr[{}]/td[1]/input".format(i), j])
 
 
