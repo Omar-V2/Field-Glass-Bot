@@ -1,5 +1,5 @@
 # Field-Glass-Bot
-A short python script that automatically fills in fieldglass timesheets
+A short python script that automatically fills in fieldglass timesheets.
 # Usage
 After cloning the project, enter your username and password in credentials.py
 After, simply run "python auto_field_glass.py" and let the script do the rest.
