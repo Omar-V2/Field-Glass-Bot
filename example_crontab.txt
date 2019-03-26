@@ -1,0 +1,17 @@
+# ┌───────────── minute (0 - 59)
+# │ ┌───────────── hour (0 - 23)
+# │ │ ┌───────────── day of month (1 - 31)
+# │ │ │ ┌───────────── month (1 - 12)
+# │ │ │ │ ┌───────────── day of week (0 - 6) (Sunday to Saturday;
+# │ │ │ │ │                                       7 is also Sunday on some systems)
+# │ │ │ │ │
+# │ │ │ │ │
+# * * * * *  command_to_execute
+
+# Crontab test
+# This will write hello to a txt file, every minute, every day, ... etc.
+* * * * * echo hello >> ~/Code/CronTabTest/test.txt
+
+# Fill in timesheet every Friday at 6pm - edit to your liking
+0 18 * * 5 python ~/path/to/script/Field-Glass-Bot-P/src/auto_field_glass.py
+
