@@ -1,10 +1,13 @@
 # Field-Glass-Bot
 A short python script that automatically fills in fieldglass timesheets.
 # Usage
-After cloning the project, enter your username and password in credentials.py  
+After cloning the project, enter your username and password in credentials.py
+Alternatively and what is actually better practice is to export your username and password as variables  
+in your bash profile, then the script can access them using os.environ, you will need to uncomment two lines in the to fix this
 After, simply run "python auto_field_glass.py" and let the script do the rest.
 The Script won't actually submit the timesheet for you, this is done intentionally
 so that you can make sure everything looks good before submitting yourself.
+
 # Usage with Cron Jobs
 If you don't know what Cron Jobs are here is a great video: https://www.youtube.com/watch?v=QEdHAwHfGPc  
 You can set up your system's crontab such that this script is executed automatically on a weekly basis,
