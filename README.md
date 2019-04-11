@@ -13,7 +13,7 @@ If you don't know what Cron Jobs are here is a great video: https://www.youtube.
 You can set up your system's crontab such that this script is executed automatically on a weekly basis,
 for example every Friday at 6pm. This way you don't have to run the script explicilty yourself!
 An example crontab file is included in the root directory of this repo for reference.
-# Reqruirements
+# Requirements
 Only selenium is required for this project, found in requirements.txt, run pip install -r requirements.txt or just pip install selenium.
 additionally you will also need to install chrome driver, instructions to so can be found here:
 mac: https://www.kenst.com/2015/03/installing-chromedriver-on-mac-osx/
