@@ -1,7 +1,10 @@
 # Field-Glass-Bot
 A short python script that automatically fills in fieldglass timesheets.
 # Usage
-After cloning the project, enter your username and password in credentials.py
+After cloning the project, the recommended way to enter your username and password is to 
+store them as environment variables in your bash_profile and then update the envar.py file 
+with the names of these variables. Alternatively, but not recommended you can simply enter 
+your username and password in the credentials.py file.
 After, simply run "python auto_field_glass.py" and let the script do the rest.
 The Script won't actually submit the timesheet for you, this is done intentionally
 so that you can make sure everything looks good before submitting yourself.
