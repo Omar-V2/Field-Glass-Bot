@@ -1,29 +1,26 @@
 import os
 import time
+from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
-from credentials import Credentials
-from envar import EnvironmentVariables
 
 
+load_dotenv()
+
+USERNAME = os.getenv("USERNAME")
+PASSWORD = os.getenv("PASSWORD")
+
+
+# open the browser, go to fieldglass and locate login input fields
 driver = webdriver.Chrome()
 driver.get("https://www.fieldglass.net/?next=%2Fworker_desktop.do")
 username_field = driver.find_element_by_id("usernameId_new")
 password_field = driver.find_element_by_id("passwordId_new")
-# If you are entering your credentials in the credntials.py file (not recommended)
-if Credentials.username and Credentials.password:
-    username_field.send_keys(Credentials.username)
-    password_field.send_keys(Credentials.password)
-else: # using env variable method (recommended)
-    username = os.environ.get(EnvironmentVariables.USERNAME_VAR) # Replace with the name of the evnironement variable you created
-    password = os.environ.get(EnvironmentVariables.PASSWORD_VAR)
-    if username and password:
-        username_field.send_keys(username)
-        password_field.send_keys(password)
-    else:
-        raise NameError("You have not created an environment variable for your field glass username and/or password")
+
+username_field.send_keys(USERNAME)
+password_field.send_keys(PASSWORD)
 
 driver.find_element_by_class_name("formLoginButton_new").click()
 driver.find_element_by_link_text("Complete Time Sheet").click()
