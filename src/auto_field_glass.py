@@ -33,6 +33,7 @@ for i, j in zip(range(4, 8), [8, 11, 12, 17]): # these are the work intervals of
 for path in cell_paths:
     cell = driver.find_element_by_xpath(path[0])
     cell.send_keys(path[1])
+cell.send_keys(Keys.ENTER)
 
 for i in range(1, 5):
     driver.find_element_by_id("copyIcon_{}".format(i)).click()
