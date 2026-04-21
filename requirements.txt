@@ -1,2 +1,2 @@
 selenium==3.141.0
-python-dotenv==0.10.3
+python-dotenv==1.2.2
